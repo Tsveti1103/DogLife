@@ -46,11 +46,11 @@
             <div class="pagin">
                 {% if places.has_previous %}
                     <a href="?page=1">1</a>
-                    <a href="?page={{ places.previous_page_number }}"><<</a>
+                    <a href="?page={{ places.previous_page_number }}">&laquo;</a>
                 {% endif %}
                 {{ places.number }} / {{ places.paginator.num_pages }}.
                 {% if places.has_next %}
-                    <a href="?page={{ places.next_page_number }}">>></a>
+                    <a href="?page={{ places.next_page_number }}">&raquo;</a>
                     <a href="?page={{ places.paginator.num_pages }}">{{ places.paginator.num_pages }}</a>
                 {% endif %}
             </div>

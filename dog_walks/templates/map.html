@@ -7,4 +7,26 @@
 {% block page_content %}
     <h1>Карта</h1>
     <div class="map">{{ the_map|safe }}</div>
+        <h2>Легенда</h2>
+    <div class="legend" style="text-align: center">
+        <ul class="nightPin">
+            <li class="firstLi"><i class="fa-solid fa-location-pin"></i> - Място за нощувка</li>
+            <li><i class="fa-solid fa-bed whiteIcon"></i> - Позволено за кучета</li>
+            <li><i class="fa-solid fa-bed yellowIcon"></i> - Позволено с условие</li>
+            <li><i class="fa-solid fa-bed redIcon"></i> - Забранено за кучета</li>
+        </ul>
+        <ul class="eatPin">
+            <li class="firstLi"><i class="fa-solid fa-location-pin"></i> - Място за храна</li>
+            <li><i class="fa-solid fa-cutlery whiteIcon" aria-hidden="true"></i> - Позволено за кучета</li>
+            <li><i class="fa-solid fa-cutlery yellowIcon" aria-hidden="true"></i> - Позволено с условие</li>
+            <li><i class="fa-solid fa-cutlery redIcon" aria-hidden="true"></i> - Забранено за кучета</li>
+        </ul>
+        <ul class="walkPin">
+            <li class="firstLi"><i class="fa-solid fa-location-pin"></i> - Място за разходка</li>
+            <li><i class="fa-solid fa-tree whiteIcon"></i> - Позволено за кучета</li>
+            <li><i class="fa-solid fa-tree yellowIcon"></i> - Позволено с условие</li>
+            <li><i class="fa-solid fa-tree redIcon"></i> - Забранено за кучета</li>
+        </ul>
+    </div>
 {% endblock %}
+

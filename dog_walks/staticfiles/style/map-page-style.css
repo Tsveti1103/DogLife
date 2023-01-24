@@ -1,8 +1,59 @@
 h1 {
     text-align: center;
 }
+
 .map {
     width: 80%;
     position: relative;
     left: 10%;
+}
+
+/*Legend style*/
+h2 {
+    margin: 20px auto 0 auto;
+}
+
+.legend {
+    display: flex;
+    margin: 0 auto 90px auto;
+}
+
+@media screen and (max-width: 800px) {
+    .legend {
+        display: block;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+.firstLi {
+    font-size: 20px;
+}
+
+.nightPin .firstLi i {
+    color: #88DAFF;
+}
+
+.eatPin .firstLi i {
+    color: #FF8A7A;
+}
+
+.walkPin .firstLi i {
+    color: #71AE26;
+}
+
+.whiteIcon {
+    color: white;
+    background-color: black;
+}
+
+.yellowIcon {
+    color: #FFFF00;
+}
+
+
+.redIcon {
+    color: #FF0000;
 }

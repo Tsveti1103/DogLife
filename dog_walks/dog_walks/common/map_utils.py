@@ -3,7 +3,6 @@ from dog_walks.common.utils import get_all_places
 from folium.plugins import Search, LocateControl
 
 
-# ?next={{ request.path }}
 def create_map():
     # f = folium.Figure(width=1200, height=700)
     the_map = folium.Map(location=[42.76686028599908, 25.238436899999996], zoom_start=8, tiles='OpenStreetMap') \
@@ -32,7 +31,8 @@ def create_map():
                 marker.icon.options['iconColor'] = 'yellow'
         elif place.PLACE_TYPE == 'eat':
             eat_places.add_child(marker)
-            marker.icon.options['icon'] = 'glyphicon glyphicon-cutlery'
+            marker.icon.options['prefix'] = 'fa'
+            marker.icon.options['icon'] = 'cutlery'
             marker.icon.options['markerColor'] = 'lightred'
         elif place.PLACE_TYPE == 'walk':
             walk_places.add_child(marker)
